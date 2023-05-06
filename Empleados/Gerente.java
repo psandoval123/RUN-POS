@@ -8,6 +8,6 @@ public class Gerente extends Empleado {
     }
     @Override
     public String get_nombre(){
-        return nombre + numero_documento;
+        return nombre + numero_documento + tipo_empleado;
     }
 }
