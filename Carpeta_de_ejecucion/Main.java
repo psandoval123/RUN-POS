@@ -1,8 +1,8 @@
-package Carpeta de ejecucion;
+package Carpeta_de_ejecucion;
 
 public class Main {
     public static void main(String[] args){
-        int x = 0;
+        int x = 1;
 
         System.out.println(x);
     }
