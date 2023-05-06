@@ -1,9 +1,11 @@
 package Carpeta_de_ejecucion;
+import Empleados.*;
 
 public class Main {
     public static void main(String[] args){
-        int x = 1;
+        Empleado juan = new Empleado("Juan David Beltran Orjuela");
 
-        System.out.println(x);
+
+        System.out.println(juan.get_nombre());
     }
 }
