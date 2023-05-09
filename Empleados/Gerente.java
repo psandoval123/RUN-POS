@@ -2,12 +2,9 @@ package Empleados;
 
 public class Gerente extends Empleado {
 
-    public Gerente(String nombre, long documento){
-        super(nombre, documento);
+    public Gerente(String nombre, long documento, String contraseña){
+        super(nombre, documento, contraseña);
         tipo_empleado = Empleado.GERENTE;
     }
-    @Override
-    public String get_nombre(){
-        return nombre + " " + numero_documento + " " + tipo_empleado;
-    }
+    
 }

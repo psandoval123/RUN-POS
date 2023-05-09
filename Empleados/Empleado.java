@@ -8,14 +8,19 @@ public class Empleado {
     protected String nombre;
     protected long numero_documento;
     protected String tipo_empleado;
+    protected String contraseña;
     
-
-    public Empleado(String nombre, long documento){
+    //Constructor para ingresar datos 
+    public Empleado(String nombre, long documento, String contraseña){
         this.nombre = nombre;
         this.numero_documento = documento;
+        this.contraseña = contraseña;
     }
 
-    public String get_nombre(){
-        return nombre;
+    //Constructor para cargar el objeto de tipo empleado
+    public Empleado(Empleado em){
+        nombre = em.nombre;
+        numero_documento = em.numero_documento;
+        contraseña = em.contraseña;
     }
 }
