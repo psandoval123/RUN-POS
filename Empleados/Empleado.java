@@ -12,9 +12,10 @@ public abstract class Empleado {
     protected String nombre_usuario;
     
     //Constructor para ingresar datos 
-    protected Empleado(String nombre, long documento, String contraseña){
+    protected Empleado(String nombre, long documento, String nombre_usuario, String contraseña){
         this.nombre = nombre;
         this.numero_documento = documento;
+        this.nombre_usuario = nombre_usuario;
         this.contraseña = contraseña;
     }
 
@@ -22,6 +23,8 @@ public abstract class Empleado {
     protected Empleado(Empleado em){
         nombre = em.nombre;
         numero_documento = em.numero_documento;
+        tipo_empleado = em.tipo_empleado;
+        nombre_usuario = em.nombre_usuario;
         contraseña = em.contraseña;
     }
 
