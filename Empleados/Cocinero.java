@@ -7,4 +7,8 @@ public class Cocinero extends Empleado {
         tipo_empleado = Empleado.COCINERO;
     }
 
+    @Override
+    public int tipo_inter_grafica(){
+        return 1;
+    }
 }
