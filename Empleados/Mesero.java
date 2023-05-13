@@ -6,5 +6,8 @@ public class Mesero extends Empleado {
         tipo_empleado = Empleado.MESERO;
     }
 
-    
+    @Override
+    public int tipo_inter_grafica(){
+        return 3;
+    }
 }

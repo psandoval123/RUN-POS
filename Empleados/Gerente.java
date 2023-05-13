@@ -7,4 +7,8 @@ public class Gerente extends Empleado {
         tipo_empleado = Empleado.GERENTE;
     }
     
+    @Override
+    public int tipo_inter_grafica(){
+        return 2;
+    }
 }
